@@ -1,0 +1,16 @@
+ardsrv@ardsrv:~/Документы/GitHub/ac-meter$ Failed to connect to provider "Connection with GitHub Client failed. Please make sure your git executableis setup correct, and your token has enought access rights."
+Failed: команда не найдена
+ardsrv@ardsrv:~/Документы/GitHub/ac-meter$ git config --local --get remote.origin.urlhttps://github.com/NikS8/ac-meter.git
+ardsrv@ardsrv:~/Документы/GitHub/ac-meter$ git config --local --get remote.origin.url
+https://github.com/NikS8/ac-meter.git
+ardsrv@ardsrv:~/Документы/GitHub/ac-meter$ git remote -v
+origin  https://github.com/NikS8/ac-meter.git (fetch)
+origin  https://github.com/NikS8/ac-meter.git (push)
+ardsrv@ardsrv:~/Документы/GitHub/ac-meter$ git config --local --get remote.origin.url
+https://github.com/NikS8/ac-meter.git
+ardsrv@ardsrv:~/Документы/GitHub/ac-meter$ git push -u origin master
+Username for 'https://github.com': NikS8
+Password for 'https://NikS8@github.com':
+Ветка «master» отслеживает внешнюю ветку «master» из «origin».
+Everything up-to-date
+ardsrv@ardsrv:~/Документы/GitHub/ac-meter$
