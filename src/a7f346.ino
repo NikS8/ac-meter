@@ -1,6 +1,9 @@
 
 void setup() {
     Serial.begin(9600);
+    pinMode( A1, INPUT );
+    pinMode( A2, INPUT );
+    pinMode( A3, INPUT );
 }
 
 void loop() {
