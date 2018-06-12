@@ -8,9 +8,9 @@ void setup() {
 }
 
 void loop() {
-    int x1 = analogRead(1);
-    int x2 = analogRead(2);
-    int x3 = analogRead(3);
+    int x1 = readMean(1, 40);
+    int x2 = readMean(2, 40);
+    int x3 = readMean(3, 40);
  /*   Serial.print("   ");
     Serial.print(x1);
     Serial.print("   ");
@@ -28,4 +28,20 @@ void loop() {
     Serial.print("   ");
     Serial.println(ac3);
 
+
+}
+
+// функция считывает аналоговый вход заданное количество раз
+// и возвращает отфильтрованное значение
+int readMean(int pin, int samples){
+  // переменная для хранения суммы считанных значений
+  int sum = 0;
+  // чтение и складывание значений
+  for (int i = 0; i < samples; i++){
+    sum = sum + analogRead(pin);
+  }
+  // делим сумму значений на количество измерений
+  sum = sum/samples;
+  // возвращаем среднее значение
+  return sum;
 }
